@@ -8,14 +8,14 @@ from datetime import datetime
 
 LOGIN = ""
 SUBJECT_CODES = [""]
-SLEEP_SECONDS = 1800
+SLEEP_SECONDS = 10
 
 PASSWORD = getpass.getpass(prompt='Password: ', stream=None)
 
 
 chrome_options = Options()
-driver = webdriver.Chrome(chrome_options=chrome_options)
 while (len(SUBJECT_CODES) > 0):
+    driver = webdriver.Chrome(chrome_options=chrome_options)
     driver.get('https://www.kos.cvut.cz/kos/')
     driver.find_element_by_id("userName").send_keys(LOGIN)
     driver.find_element_by_id("password").send_keys(PASSWORD)
@@ -36,4 +36,5 @@ while (len(SUBJECT_CODES) > 0):
         exit(0)
     else:
         print(f"{datetime.now()} : Remaining codes:{SUBJECT_CODES}")
+    driver.close()
     sleep(SLEEP_SECONDS)
