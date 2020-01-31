@@ -1,6 +1,6 @@
 # KOShack" = ultimate KOS hacking tool
 
-It tries to add the desired subjects in given frequency.
+It tries to add the desired subjects in a given frequency.
 
 "KOShack" refers to the russian word "Кошак" that means a glorious and huge (probably fat, but in a good sence) cat. As Garfield for example.
 
