@@ -1,0 +1,7 @@
+name: koshack
+
+dependencies:
+  - python    3.6.*
+  - selenium
+  - python-chromedriver-binary 2.38.*
+
