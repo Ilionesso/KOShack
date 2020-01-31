@@ -6,8 +6,8 @@ from selenium.webdriver.chrome.options import Options
 import chromedriver_binary
 from datetime import datetime
 
-LOGIN = "sheikili"
-SUBJECT_CODES = ["2336016"]
+LOGIN = ""
+SUBJECT_CODES = [""]
 SLEEP_SECONDS = 1800
 
 PASSWORD = getpass.getpass(prompt='Password: ', stream=None)
